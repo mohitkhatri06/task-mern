@@ -2,9 +2,9 @@ import express from 'express';
 import path from 'path';
 import dotenv from 'dotenv';
 dotenv.config();
-import userRoutes from '../routes/userRoutes.js';
-import { errorHandler, notFound } from '../middleware/errorMiddleware.js';
-import connectDB from '../config/db.js';
+import userRoutes from './routes/userRoutes.js';
+import { errorHandler, notFound } from './middleware/errorMiddleware.js';
+import connectDB from './config/db.js';
 import cookieParser from 'cookie-parser';
 const port = process.env.PORT || 5000;
 
