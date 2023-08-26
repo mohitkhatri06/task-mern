@@ -8,7 +8,7 @@ export default defineConfig({
       port: 3000,
       proxy: {
          '/api': {
-            target: 'http://localhost:8000',
+            target: 'https://task-mern-be.vercel.app/',
             changeOrigin: true,
          },
       },
