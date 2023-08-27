@@ -6,10 +6,7 @@ export default defineConfig({
    plugins: [react()],
    server: {
       proxy: {
-         '/api': {
-            target: 'https://task-mern-be.vercel.app',
-            changeOrigin: true,
-         },
+         '/api': 'https://task-mern-be.vercel.app',
       },
    },
 });
