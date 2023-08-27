@@ -5,8 +5,12 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
    plugins: [react()],
    server: {
+      port: 3000,
       proxy: {
-         '/api': 'https://task-mern-be.vercel.app',
+         '/api': {
+            target: 'https://task-mern-be.vercel.app',
+            changeOrigin: true,
+         },
       },
    },
 });
