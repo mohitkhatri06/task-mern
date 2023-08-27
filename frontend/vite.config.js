@@ -10,6 +10,7 @@ export default defineConfig({
             target: 'https://task-mern-be.vercel.app',
             changeOrigin: true,
             secure: false,
+            ws: true,
          },
       },
    },
