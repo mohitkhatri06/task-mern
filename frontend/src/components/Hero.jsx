@@ -12,6 +12,10 @@ const Hero = () => {
                   Bootstrap library. Below is the task to screen and video
                   capture.
                </p>
+               <p>
+                  As for now screen recording is only supported over the
+                  desktop, not for mobile.
+               </p>
             </Card>
          </Container>
       </div>
